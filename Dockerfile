@@ -1,4 +1,4 @@
-FROM Openjdk:8
+FROM java8
 ADD target/docker-jenkins-integration-sample.jar docker-jenkins-integration-sample.jar
 EXPOSE 9090
 ENTRYPOINT ["java","-jar","docker-jenkins-integration-sample.jar"]
